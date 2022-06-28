@@ -52,8 +52,14 @@ const teamMembers = [
   },
 ];
 
+const container = document.getElementById("container");
+
 for (let x = 0; x < teamMembers.length; x++) {
-  console.log(
+  /* console.log(
     `Greetings ==> ${teamMembers[x].name} ${teamMembers[x].occupation} ${teamMembers[x]["profile picture"]}`
-  );
+  ); */
+  const members = `Greetings ==> ${teamMembers[x].name} ${teamMembers[x].occupation} ${teamMembers[x]["profile picture"]}`;
+  console.log(members);
+
+  container.innerHTML += members;
 }
