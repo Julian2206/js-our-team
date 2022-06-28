@@ -28,26 +28,32 @@ const teamMembers = [
   {
     name: "Angela Caroll",
     occupation: "Chief Editor",
-    "profile picture": "",
+    "profile picture": "angela-caroll-chief-editor.jpg",
   },
   {
     name: "Walter Gordon",
     occupation: "Office Manager",
-    "profile picture": "",
+    "profile picture": "walter-gordon-office-manager.jpg",
   },
   {
     name: "Angela Lopez",
     occupation: "Socila Media Manager",
-    "profile picture": "",
+    "profile picture": "angela-lopez-social-media-manager.jpg",
   },
   {
     name: "Scott Estrada",
     occupation: "Developer",
-    "profile picture": "",
+    "profile picture": "scott-estrada-developer.jpg",
   },
   {
     name: "Barbara Ramos",
     occupation: "Graphic Designer",
-    "profile picture": "",
+    "profile picture": "barbara-ramos-graphic-designer.jpg",
   },
 ];
+
+for (let x = 0; x < teamMembers.length; x++) {
+  console.log(
+    `Greetings ==> ${teamMembers[x].name} ${teamMembers[x].occupation} ${teamMembers[x]["profile picture"]}`
+  );
+}
